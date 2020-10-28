@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	.flex {
+		display: flex;
+	}
+
+	margin-top: 2rem;
+	height: 2rem;
+
+	align-items: center;
+	.header-- {
+		&logo {
+			margin-right: 1rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.header {
+		.header-- {
+			&logo {
+				margin-right: 0;
+			}
+		}
+	}
+}

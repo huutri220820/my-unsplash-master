@@ -1,0 +1,24 @@
+.form {
+	padding: 40px;
+	background-color: white;
+	border-radius: 10px;
+	.form-header {
+		font-weight: bold;
+		margin-bottom: 2rem;
+	}
+	.form-body :nth-child(n) {
+		margin-bottom: 0.5rem;
+	}
+	label {
+		font-weight: bold;
+	}
+	.form-button {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+
+		& :nth-child(n + 1) {
+			margin-left: 1rem;
+		}
+	}
+}

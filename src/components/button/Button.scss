@@ -1,0 +1,68 @@
+.btn {
+	transition: all 0.1s ease-in-out;
+
+	border: none;
+	border-radius: 10px;
+
+	background-color: var(--background-color);
+	color: black;
+
+	padding: 5px 10px;
+
+	font-weight: bold;
+	white-space: nowrap;
+
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.05);
+		background-color: var(--background-color-hover);
+		box-shadow: 0 0 var(--box-shadow) var(--background-color-hover);
+	}
+	&:active {
+		transform: scale(1);
+		transform: translateY(2px);
+		background-color: var(--background-color-click);
+		--box-shadow: 5px;
+	}
+	&.btn-- {
+		//color
+		&success {
+			--background-color: #16a085;
+			--background-color-hover: #189c82;
+			--background-color-click: #158871;
+			color: white;
+		}
+		&primary {
+			--background-color: #45aaf2;
+			--background-color-hover: #2d98da;
+			--background-color-click: #4b7bec;
+			color: white;
+		}
+		&danger {
+			--background-color: #fc5c65;
+			--background-color-hover: #eb3b5a;
+			--background-color-click: #ca3853;
+			color: white;
+		}
+		&warning {
+			--background-color: #fd9644;
+			--background-color-hover: #fa8231;
+			--background-color-click: #e2742b;
+			color: white;
+		}
+		//size
+		&small {
+			padding: 7px 10px;
+			max-height: 2rem;
+		}
+		&medium {
+			padding: 10px 20px;
+			max-height: 2.5rem;
+		}
+		&large {
+			padding: 15px 40px;
+			max-height: 3.5rem;
+		}
+	}
+}
