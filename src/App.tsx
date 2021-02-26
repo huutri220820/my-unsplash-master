@@ -27,9 +27,7 @@ function App() {
 	var divList: any[] = [];
 
 	//clone photo from photoList global state
-	var arrPhoto = photoList.filter((photo) =>
-		photo.label.toLowerCase().includes(search.toLowerCase())
-	);
+	var arrPhoto = photoList.filter((photo) => photo.label.toLowerCase().includes(search.toLowerCase()));
 
 	// paging : count on page
 	const paging = Math.ceil(arrPhoto.length / columns);
@@ -46,7 +44,6 @@ function App() {
 		divList = [...divList, div];
 	}
 
-	////*return
 	return (
 		<div className="app">
 			<div className="container">
